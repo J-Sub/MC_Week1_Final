@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="311dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="victory.json"
+        app:lottie_loop="true" />
+
+    <ImageButton
+        android:id="@+id/goodNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@color/cardview_light_background"
+        app:srcCompat="@drawable/left_arrow" />
+
+    <TextView
+        android:id="@+id/goodText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/goodNext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-8dp"
+        android:text="오늘은 공짜밥!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+</RelativeLayout>

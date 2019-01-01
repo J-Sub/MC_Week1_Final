@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/anim"
+        android:layout_width="match_parent"
+        android:layout_height="286dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="em_tongue.json"
+        app:lottie_loop="true" />
+
+    <ImageButton
+        android:id="@+id/badNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@android:color/background_light"
+        app:srcCompat="@drawable/left_arrow" />
+
+    <TextView
+        android:id="@+id/badText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/badNext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-7dp"
+        android:text="그대의 잔고는 안녕!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+</RelativeLayout>
